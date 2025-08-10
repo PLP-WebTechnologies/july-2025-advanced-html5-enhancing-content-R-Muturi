@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Content & Forms</title>
+</head>
+<body>
+
+    <header>
+        <h1>Graphic Design</h1>
+        <p>Graphic design is a profession, academic discipline and applied art that involves 
+            creating visual communications intended to transmit specific messages to social groups, with specific objectives
+            in mind. Graphic design is the art and practice of planning and projecting ideas and experiences with visual and textual content.</p>
+        </p>
+    </header>
+
+    <main>
+        
+        <section>
+            <h2>Graphic Design Elements</h2>
+            
+            <h3>Hierachy </h3>
+            <ul>
+                <li>Guides the viewer's eye</li>
+                <li>Organizes Information</li>
+                <li>Effective Communication</li>
+                <li>Uses Visual Cues</li>
+            </ul>
+
+            <h3>Typography</h3>
+            <ol>
+                <li>Typeface and font.</li>
+                <li>Readability and legibility.</li>
+                <li>Spacing.</li>
+                <li>Font pairing.</li>
+                <li>Use of white space</li>
+            </ol>
+
+            <h3>Sample Data Table</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item ID</th>
+                        <th>Product Name</th>
+                        <th>Price (USD)</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Logo</td>
+                        <td>9.99</td>
+                        <td>In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Poster</td>
+                        <td>5.50</td>
+                        <td>Low Stock</td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>Flyer</td>
+                        <td>7.00</td>
+                        <td>Out of Stock</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Data as of today.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section>
+            <h2>Embedded Media Example</h2>
+            <p>Here is an example of an image embedded using the <code>&lt;img&gt;</code> tag.</p>
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ0Lg-Bp1ldzBuhwgHlkiK98OOlqB6T7u5gw&s" alt="AI graphic .">
+                <figcaption>A placeholder image to demonstrate the use of the <code>&lt;img&gt;</code> tag and a caption.</figcaption>
+            </figure>
+            <p>And here is an example of a video using the <code>&lt;video&gt;</code> tag.</p>
+            <video controls width="600" height="300">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>User Registration Form</h2>
+            <form action="#" method="post" autocomplete="off">
+                <p>Please fill out this form. All fields are required unless otherwise noted.</p>
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="example@domain.com" required autocomplete="email">
+
+                    <label for="phone">Phone Number (optional):</label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    <small>Format: 123-456-7890</small>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account Information</legend>
+
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" minlength="5" maxlength="20" required>
+                    <small>Min 5, Max 20 characters.</small>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" minlength="8" required>
+                    <small>Password must be at least 8 characters long.</small>
+
+                    <label for="readonly-field">Read-Only Field:</label>
+                    <input type="text" id="readonly-field" name="readonly-field" value="This field cannot be edited" readonly>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+
+                    <p>Preferred Contact Method:</p>
+                    <label><input type="radio" name="contact-method" value="email" required> Email</label>
+                    <label><input type="radio" name="contact-method" value="phone"> Phone</label>
+
+                    <p>Select your interests (check all that apply):</p>
+                    <label><input type="checkbox" name="interests" value="html"> HTML</label>
+                    <label><input type="checkbox" name="interests" value="css"> CSS</label>
+                    <label><input type="checkbox" name="interests" value="javascript"> JavaScript</label>
+                </fieldset>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="quantity">Quantity (1-10):</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+
+                <button type="submit">Submit Form</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy;Rochelle 2025. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
